@@ -11,7 +11,7 @@
     box-sizing: border-box;
 }
 body {
-    background: url(./assets/img/bg.jpg) center/cover;
+    background: url(./assets/img/background.jpg) center/cover;
     height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--color1);
@@ -46,6 +46,27 @@ h1{
     grid-template-columns: 20% 80%;
 }
 
+.polygon-container {
+    filter: drop-shadow(-1px 6px 3px var(--color2));
+    /* mettre le parent en grid */
+    place-self: center left;
+}
 .polygon {
-    
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    background: linear-gradient(135deg, var(--color2), var(--color1));
+    height: 70px;
+    width: 100px;
+}
+
+.polygon::after {
+    content: "un texte";
+    position: absolute;
+    color: var(--color1);
+    background: var(--color3);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(352deg);
+    width: 90px;
+    padding: 4px;
+    text-align: center;
 }

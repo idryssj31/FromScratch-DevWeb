@@ -19,6 +19,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .card {
@@ -220,6 +221,7 @@ button:hover {
 
 button:hover + a, a:hover{
     opacity: 1;
+    visibility: visible;
     transform: translateY(0);
 }
 
@@ -228,10 +230,51 @@ a {
     text-align: center;
     display: block;
     opacity: 0;
+    visibility: hidden;
     transform: translateY(20px);
     transition: 0.3s;
 }
 
 a:visited {
     color: var(--color2);
+}
+
+img {
+    height: 60px;
+    position: absolute;
+    filter: drop-shadow(0px 6px 3px var(--color1));
+    z-index: -1;
+    animation: spaceship 20s infinite linear;
+}
+
+@keyframes spaceship {
+    0% {
+        top: 2%;
+        left: 2%;
+        transform: rotate(90deg);
+    }
+
+    20% {
+        top: 6%;
+        left: 30%;
+        transform: rotate(90deg);
+    }
+
+    50% {
+        top: 9%;
+        left: 60%;
+        transform: rotate(90deg);
+    }
+
+    70% {
+        top: 0%;
+        left: 80%;
+        transform: rotate(90deg);
+    }
+
+    100% {
+        top: 2%;
+        left: 2%;
+        transform: rotate(90deg);
+    }
 }

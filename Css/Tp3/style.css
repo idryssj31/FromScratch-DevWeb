@@ -21,11 +21,14 @@ body {
 }
 
 nav {
+    display: grid;
+    grid-template-columns: 50% 50%;
     padding: 10px 20px;
 }
 
 nav ul {
-   width: 50%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
 }
 
 nav li {
@@ -37,11 +40,8 @@ main {
 }
 
 .main-content {
-
-}
-
-.left-main-content {
-
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 .left-main-content h1 , h3 , p {
@@ -64,12 +64,17 @@ main {
 }
 
 .lower-section {
+    display: grid;
+    grid-template-columns: 33% 67%;
     background-color: black;
     border-radius: 20px;
+    
 }
 
 .left-section {
-    margin: 0px 20px;
+    display: grid;
+    align-items: center;
+    height: 80%;
 }
 
 .left-section button {
@@ -80,20 +85,27 @@ main {
     font-size: 0.8rem;
     padding: 10px 20px;
     width: 144px;
+    margin: 5px;
 }
 
 .right-section {
-    margin: 20px;
-    width: 70%;
+    width: 67%;
 }
 
-.img-section img{
-    margin: 30px 100px 100px;
-    width: 80px;
+.img-section {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.img-section img{ 
+    margin: 40px;
+    margin-left: 80px;
+    height: 40px;
 }
 
 #modem {
     width: 100%;
+    margin: 0 auto;
 }
 
 

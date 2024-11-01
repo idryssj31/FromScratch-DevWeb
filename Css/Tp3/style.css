@@ -16,23 +16,16 @@ body {
     color: var(--textColor1);
     background-color: var(--backgroundColor1);
     font-family: 'Inter', sans-serif;
-    align-items: center;
-    justify-content: center;
     overflow: hidden;
     min-height: 100vh;
 }
 
 nav {
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 10px 20px;
 }
 
 nav ul {
-   display: flex;
    width: 50%;
-   justify-content: space-between;
 }
 
 nav li {
@@ -44,11 +37,11 @@ main {
 }
 
 .main-content {
-    display: flex;
+
 }
 
 .left-main-content {
-    align-content: center;
+
 }
 
 .left-main-content h1 , h3 , p {
@@ -71,19 +64,12 @@ main {
 }
 
 .lower-section {
-    display: flex;
-    justify-content: space-between;
     background-color: black;
     border-radius: 20px;
 }
 
 .left-section {
     margin: 0px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-
 }
 
 .left-section button {

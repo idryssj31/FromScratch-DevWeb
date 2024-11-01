@@ -1,0 +1,70 @@
+:root {
+    --backgroundColor1: rgb(29,29,29);
+    --textColor1: white;
+    --textColor2:rgb(69,74,216);
+    --buttonColor1:rgb(63,69,228);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--textColor1);
+    background-color: var(--backgroundColor1);
+    font-family: 'Inter', sans-serif;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+nav {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav ul {
+   display: flex;
+   width: 50%;
+   justify-content: space-between;
+}
+
+li {
+    list-style: none;
+}
+
+main {
+    padding: 10px 20px;
+}
+
+.main-content {
+    display: flex;
+}
+
+.left-main-content {
+    align-content: center;
+}
+
+.left-main-content h1 , h3 , p {
+    padding: 10px 0px;
+}
+
+.left-main-content h1 {
+    font-size: 60px;
+}
+
+.left-main-content h3 {
+    color: var(--textColor2);
+    font-size: 25px;
+}
+
+
+
+
+
+
+

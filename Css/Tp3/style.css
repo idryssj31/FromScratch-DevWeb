@@ -42,6 +42,7 @@ main {
 .main-content {
     display: grid;
     grid-template-columns: 50% 50%;
+    align-items: center;
 }
 
 .left-main-content h1 , h3 , p {
@@ -107,6 +108,28 @@ main {
     width: 100%;
     margin: 0 auto;
 }
+
+
+/* ************** MEDIA QUERY **************** */
+
+@media  screen and (max-width: 600px) {
+    body {
+        background : red;
+        
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: 100%;
+        padding: 10px 20px;
+    }
+
+    .main-content {
+        display: grid;
+
+    }
+}
+    
 
 
 

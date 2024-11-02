@@ -1,0 +1,135 @@
+:root {
+    --backgroundColor1: rgb(29,29,29);
+    --textColor1: white;
+    --textColor2:rgb(69,74,216);
+    --buttonColor1:rgb(63,69,228);
+}
+
+* {
+    margin: 0;
+    margin-bottom: -1px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--textColor1);
+    background-color: var(--backgroundColor1);
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10px 20px;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+nav li {
+    list-style: none;
+}
+
+main {
+    padding: 10px 20px;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+.left-main-content h1 , h3 , p {
+    padding: 10px 0px;
+}
+
+.left-main-content h1 {
+    font-size: 4.5rem;
+}
+
+.left-main-content h3 {
+    color: var(--textColor2);
+    font-size: 2rem;
+}
+
+.right-main-content {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.lower-section {
+    display: grid;
+    grid-template-columns: 33% 67%;
+    background-color: black;
+    border-radius: 20px;
+    
+}
+
+.left-section {
+    display: grid;
+    align-items: center;
+    height: 80%;
+}
+
+.left-section button {
+    background: var(--buttonColor1);
+    color: var(--textColor1);
+    border-radius: 10px;
+    border: none;
+    font-size: 0.8rem;
+    padding: 10px 20px;
+    width: 144px;
+    margin: 5px;
+}
+
+.right-section {
+    width: 67%;
+}
+
+.img-section {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.img-section img{ 
+    margin: 40px;
+    margin-left: 80px;
+    height: 40px;
+}
+
+#modem {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* ************** MEDIA QUERY **************** */
+
+@media  screen and (max-width: 600px) {
+    body {
+        background : red;
+        
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: 100%;
+        padding: 10px 20px;
+    }
+
+    .main-content {
+        display: grid;
+
+    }
+}
+    
+
+
+

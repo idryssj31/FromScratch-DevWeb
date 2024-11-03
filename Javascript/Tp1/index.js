@@ -19,6 +19,10 @@ let maVariable2 = "hello";
 let unChiffre = 24;
 unChiffre = 22;
 
+// const valeur ne change pas
+const age = 10;
+console.log(age);
+
 let chaine = "je suis l'une des chaines de caractères";
 console.log(chaine);
 
@@ -98,3 +102,23 @@ if (x < y && x > 1) {
 } else {
   console.log("non exact1");
 }
+
+// *** Les fonctions ***
+
+// fct à l'ancienne
+function setVar() {
+  let health = 18;
+  health++;
+  return health;
+}
+// Il faut absolument call la fct
+
+// Fct flechée
+const addition = (a, b) => {
+  console.log(a + b);
+};
+
+addition(4, 3);
+setVar();
+// La portée des variables
+// console.log(health); erreur variable existe que dans le scoop de la fct

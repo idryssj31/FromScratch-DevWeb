@@ -21,13 +21,13 @@ questionContainer.addEventListener("click", () => {
 
 btn1.addEventListener("click", () => {
   console.log("ok");
-  response.style.visibility = "visible";
-  response.style.background = "blue";
+  response.classList.add("show-response");
+  response.style.background = "green";
 });
 
 btn2.addEventListener("click", () => {
   console.log("okk");
-  response.style.visibility = "visible";
+  response.classList.add("show-response");
   response.style.background = "red";
 });
 

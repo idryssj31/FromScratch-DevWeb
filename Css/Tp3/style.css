@@ -112,22 +112,50 @@ main {
 
 /* ************** MEDIA QUERY **************** */
 
-@media  screen and (max-width: 600px) {
+@media  screen and (max-width: 900px) {
     body {
-        background : red;
-        
+        background : red; 
+        overflow: visible;     
     }
 
     nav {
-        display: grid;
-        grid-template-columns: 100%;
-        padding: 10px 20px;
-    }
+        grid-template-columns: 30% 70%;
+        margin-left: 30px;
+    }   
 
     .main-content {
-        display: grid;
-
+        grid-template-columns: 100%;
+        align-items: center;
     }
+
+    .right-main-content {
+        width: 100%;
+        align-items: center;
+        margin: auto 0;
+    }
+
+    #modem {
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .lower-section {
+        grid-template-columns: 100%;   
+    }
+
+    .left-section {
+        margin-left: 40%;
+    }
+
+    .right-section h3 {
+        margin-left: 63%;
+        margin-top: 3%;
+    }
+
+    .img-section img{ 
+        margin-left: 100%;
+    }
+    
 }
     
 

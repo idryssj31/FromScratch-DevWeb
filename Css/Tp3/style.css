@@ -90,6 +90,7 @@ main {
 }
 
 .right-section {
+    display: grid;
     width: 67%;
 }
 
@@ -114,7 +115,6 @@ main {
 
 @media  screen and (max-width: 900px) {
     body {
-        background : red; 
         overflow: visible;     
     }
 
@@ -132,6 +132,8 @@ main {
         width: 100%;
         align-items: center;
         margin: auto 0;
+        margin-top: 5%;
+        margin-bottom: 5%;
     }
 
     #modem {
@@ -154,6 +156,18 @@ main {
 
     .img-section img{ 
         margin-left: 100%;
+    }
+
+    .left-main-content h1 {
+        font-size: 3.5rem;
+    }
+
+    .left-main-content h3 {
+        font-size: 1.7rem;
+    }
+
+    .left-main-content p {
+        font-size: 0.9rem;
     }
     
 }

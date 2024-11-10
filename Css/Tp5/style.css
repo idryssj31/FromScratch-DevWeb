@@ -20,11 +20,14 @@ nav ul button {
 
 nav ul button:hover {
     color: var(--colorBtnNav);
+    border-top: 0.3rem solid;
+    
 }
 
-#language {
+#language  {
+    border-top: none;
     border: 1px solid;
-    border-radius: 10%;
+    border-radius: 12px;
     background-color: var(--colorBtnNavLang);
 }
 

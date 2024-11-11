@@ -31,5 +31,21 @@ nav ul button:hover {
     background-color: var(--colorBtnNavLang);
 }
 
+.main-header {
+    background: red;
+}
+
+.header-text {
+    background: blue;
+}
+
+.icon-part {
+    background: grey;
+}
+
+.news-part {
+    background: green;
+}
+
 
 

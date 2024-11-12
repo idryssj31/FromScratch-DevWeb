@@ -3,6 +3,10 @@
     --colorBtnNavLang:#DFDFDF;
 }
 
+body {
+    margin: 0 auto;
+}
+
 nav {
     margin-bottom: 5%;
 }
@@ -31,17 +35,46 @@ nav ul button:hover {
     background-color: var(--colorBtnNavLang);
 }
 
+#logo {
+    display: flex;
+    justify-content: center;
+}
+
+.main-header h1 {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.main-header button {
+    display: flex;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
 .main-header {
     background: red;
 }
 
-.header-text {
+.header-text  {
     background: blue;
+    text-align: center;
+    margin: 4%;
 }
 
 .icon-part {
     background: grey;
 }
+
+.icon-part-container {
+    display: flex;
+}
+
+.list-icon-part {
+    margin: 5% auto;
+}
+
+
 
 .news-part {
     background: green;

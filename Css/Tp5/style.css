@@ -28,9 +28,8 @@ nav ul button:hover {
     
 }
 
-#language  {
-    border-top: none;
-    border: 1px solid;
+#language {
+    border: 1px;
     border-radius: 12px;
     background-color: var(--colorBtnNavLang);
 }

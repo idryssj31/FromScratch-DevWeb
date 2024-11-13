@@ -7,8 +7,10 @@ body {
     margin: 0 auto;
 }
 
+/*--- NAV ---*/
+
 nav {
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 }
 
 nav ul {
@@ -32,11 +34,27 @@ nav ul button:hover {
     border: 1px;
     border-radius: 12px;
     background-color: var(--colorBtnNavLang);
+    padding: 5px 10px;
+    margin-top: -10px;
 }
+
+/*--- HEADER ---*/
 
 #logo {
     display: flex;
     justify-content: center;
+}
+
+header {
+    height: 700px;
+}
+
+.main-header {
+    height: 100%;
+    background-attachment: fixed;
+    background-image: url(../Tp5/assets/img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .main-header h1 {
@@ -49,20 +67,29 @@ nav ul button:hover {
     display: flex;
     margin: 0 auto;
     text-transform: uppercase;
+    font-size: 22px;
+    padding: 15px 50px;
+    background-color: transparent;
+    border-color: white;
+    color: white;
 }
 
-.main-header {
-    background: red;
+.fas {
+    margin-left: 20px;
 }
+
+/*--- TEXT ---*/
 
 .header-text  {
-    background: blue;
     text-align: center;
     margin: 4%;
 }
 
+/*--- ICONS ---*/
+
 .icon-part {
     background: grey;
+    color: white;
 }
 
 .icon-part-container {
@@ -73,11 +100,21 @@ nav ul button:hover {
     margin: 5% auto;
 }
 
+.list-icon-part button {
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+    border-color: white;
+    border: 1px solid;
+    padding: 5px 10px;
+}
 
+/*--- NEWS ---*/
 
 .news-part {
     background: green;
 }
+
 
 
 

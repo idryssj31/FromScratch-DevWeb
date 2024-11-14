@@ -61,6 +61,7 @@ header {
     display: flex;
     justify-content: center;
     text-transform: uppercase;
+    color: white;
 }
 
 .main-header button {
@@ -90,10 +91,13 @@ header {
 .icon-part {
     background: grey;
     color: white;
+    background-color: rgb(21,21,21);
+    height: 500px;
 }
 
 .icon-part-container {
     display: flex;
+    margin: 0 10%;
 }
 
 .list-icon-part {
@@ -103,17 +107,84 @@ header {
 .list-icon-part button {
     text-transform: uppercase;
     color: white;
-    background-color: black;
+    background-color: rgb(21,21,21);
     border-color: white;
     border: 1px solid;
-    padding: 5px 10px;
+    padding: 5px 20px;   
+    margin-left: 33%;
+}
+
+.list-icon-part h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.list-icon-part p {
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: -2%;
+    margin-bottom: 7%;
+}
+
+.lip-logo {
+    text-align: center;
 }
 
 /*--- NEWS ---*/
 
 .news-part {
-    background: green;
+    background: white;
 }
+
+.news-part-container {
+    background: blue;
+    margin: 5% 15%;
+}
+
+.header-news {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    background: red;
+}
+
+.left-part h2{
+    text-transform: uppercase;
+    margin-bottom: -1%;
+}
+
+.right-part button {
+    margin-top: 10%;
+    text-transform: uppercase;
+    background-color: transparent;
+    border-color: black;
+    color: black;
+    font-size: 15px;
+    padding: 5px 13px;
+}
+
+.right-part .fas {
+    margin-left: 9px;
+}
+
+.main-news {
+    margin: 5% auto;
+}
+
+.main-news-container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.main-news-container  p{
+    margin-right: 40%;
+    margin-top: -2%;
+}
+
+.main-news-container h4 {
+    margin-right: 40%;
+}
+
 
 
 

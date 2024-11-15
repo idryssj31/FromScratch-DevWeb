@@ -177,7 +177,7 @@ header {
 }
 
 .main-news-container  p{
-    margin-right: 40%;
+    margin-right: 42%;
     margin-top: -2%;
 }
 
@@ -185,7 +185,40 @@ header {
     margin-right: 40%;
 }
 
+/*--- CONTACTS ---*/
 
+.contact {
+    background: green;
+}
 
+.contact-container {
+    background: blue;
+    margin: 5% 15%;
+}
 
+.contact-list {
+    background: purple;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.contact-medias {
+    background: red;
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.list h5 {
+    text-transform: uppercase;
+}
+
+.list ul li{
+    list-style: none;
+    margin-left: -40px;
+}
+
+.list a {
+    text-decoration: none;
+}
 

@@ -10,16 +10,17 @@ body {
 /*--- NAV ---*/
 
 nav {
-    margin-bottom: 2%;
+    margin-bottom: 1%;
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 nav ul button {
+    margin: auto 40px;
     text-transform: uppercase;
     border: none;
     background-color: white;
@@ -183,10 +184,6 @@ header {
 
 .main-news-container h4 {
     margin-right: 40%;
-}
-
-.link {
-
 }
 
 /*--- CONTACTS ---*/

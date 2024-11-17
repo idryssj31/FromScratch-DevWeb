@@ -22,12 +22,12 @@ nav ul {
 nav ul button {
     text-transform: uppercase;
     border: none;
+    background-color: white;
 }
 
 nav ul button:hover {
     color: var(--colorBtnNav);
     border-top: 0.3rem solid;
-    
 }
 
 #language {
@@ -51,10 +51,11 @@ header {
 
 .main-header {
     height: 100%;
-    background-attachment: fixed;
+    width: 100%;
     background-image: url(../Tp5/assets/img/bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size:cover;
 }
 
 .main-header h1 {
@@ -134,18 +135,17 @@ header {
 /*--- NEWS ---*/
 
 .news-part {
-    background: white;
+    background: rgb(247,247,247);
 }
 
 .news-part-container {
-    background: blue;
-    margin: 5% 15%;
+    padding: 5% 15%;
+   
 }
 
 .header-news {
     display: grid;
     grid-template-columns: 65% 35%;
-    background: red;
 }
 
 .left-part h2{
@@ -183,6 +183,10 @@ header {
 
 .main-news-container h4 {
     margin-right: 40%;
+}
+
+.link {
+
 }
 
 /*--- CONTACTS ---*/

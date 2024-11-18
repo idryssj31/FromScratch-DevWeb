@@ -10,24 +10,25 @@ body {
 /*--- NAV ---*/
 
 nav {
-    margin-bottom: 2%;
+    margin-bottom: 1%;
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 nav ul button {
+    margin: auto 40px;
     text-transform: uppercase;
     border: none;
+    background-color: white;
 }
 
 nav ul button:hover {
     color: var(--colorBtnNav);
     border-top: 0.3rem solid;
-    
 }
 
 #language {
@@ -43,6 +44,12 @@ nav ul button:hover {
 #logo {
     display: flex;
     justify-content: center;
+    padding-top:3%;
+}
+
+#logo img {
+    width: 40%;
+    height: 40%;
 }
 
 header {
@@ -50,14 +57,16 @@ header {
 }
 
 .main-header {
-    height: 100%;
-    background-attachment: fixed;
     background-image: url(../Tp5/assets/img/bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size:cover;
+    height: 100%;
 }
 
 .main-header h1 {
+    padding-top: 1%;
+    padding-bottom: 1%;
     display: flex;
     justify-content: center;
     text-transform: uppercase;
@@ -134,18 +143,17 @@ header {
 /*--- NEWS ---*/
 
 .news-part {
-    background: white;
+    background: rgb(247,247,247);
 }
 
 .news-part-container {
-    background: blue;
-    margin: 5% 15%;
+    padding: 5% 15%;
+   
 }
 
 .header-news {
     display: grid;
     grid-template-columns: 65% 35%;
-    background: red;
 }
 
 .left-part h2{

@@ -44,6 +44,12 @@ nav ul button:hover {
 #logo {
     display: flex;
     justify-content: center;
+    padding-top:3%;
+}
+
+#logo img {
+    width: 40%;
+    height: 40%;
 }
 
 header {
@@ -51,15 +57,16 @@ header {
 }
 
 .main-header {
-    height: 100%;
-    width: 100%;
     background-image: url(../Tp5/assets/img/bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
+    height: 100%;
 }
 
 .main-header h1 {
+    padding-top: 1%;
+    padding-bottom: 1%;
     display: flex;
     justify-content: center;
     text-transform: uppercase;

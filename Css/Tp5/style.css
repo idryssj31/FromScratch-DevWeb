@@ -111,6 +111,7 @@ header {
 
 .list-icon-part {
     margin: 5% auto;
+    position: relative;
 }
 
 .list-icon-part button {
@@ -119,8 +120,10 @@ header {
     background-color: rgb(21,21,21);
     border-color: white;
     border: 1px solid;
-    padding: 5px 20px;   
-    margin-left: 33%;
+    padding: 5px 20px;  
+    position: absolute;
+    left: 50%; /* Moves button to the middle horizontally */
+    transform: translate(-50%, -50%); /* Centers the button */
 }
 
 .list-icon-part h3 {
@@ -130,10 +133,10 @@ header {
 
 .list-icon-part p {
     text-align: center;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: -2%;
-    margin-bottom: 7%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: -1%;
+    margin-bottom: 8%;
 }
 
 .lip-logo {

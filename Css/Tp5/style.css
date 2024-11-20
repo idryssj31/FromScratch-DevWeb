@@ -238,9 +238,6 @@ header {
   text-transform: uppercase;
 }
 
-.medias-text {
-}
-
 .medias-logos {
   display: grid;
   position: relative;
@@ -268,8 +265,9 @@ footer h3 {
 footer ul {
   display: grid;
   grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 12%;
+  margin-right: 12%;
+  list-style: none;
 }
 
 .separation {
@@ -279,4 +277,75 @@ footer ul {
   position: absolute;
   transform: translate(-50%, -50%); /* Centers the button */
   color: rgb(245, 242, 242);
+}
+
+/* ************** MEDIA QUERY **************** */
+
+@media screen and (max-width: 1250px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  body {
+    background: red;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon-part {
+    height: auto;
+  }
+
+  .icon-part-container {
+    flex-direction: column;
+  }
+
+  .header-news {
+    grid-template-columns: 100%;
+  }
+
+  .right-part {
+    text-align: center;
+  }
+
+  .left-part h2 {
+    text-align: center;
+  }
+
+  .news-part-container {
+    padding: 10% 3%;
+  }
+
+  .main-news-container {
+    grid-template-columns: 100%;
+    text-align: center;
+  }
+
+  .main-news-container h4,
+  p {
+    margin-right: 0%;
+    text-align: left;
+  }
+
+  .main-news-container .link {
+    text-align: left;
+  }
+
+  footer ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .contact {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
 }

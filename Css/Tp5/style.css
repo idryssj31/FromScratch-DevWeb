@@ -3,8 +3,21 @@
   --colorBtnNavLang: #dfdfdf;
 }
 
+@font-face {
+  font-family: "Montserrat";
+  src: url(./assets/fonts/Montserrat-Medium.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  list-style: none;
+}
+
 body {
-  margin: 0 auto;
+  box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   color: rgb(70, 63, 63);
 }

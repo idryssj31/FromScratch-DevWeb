@@ -137,3 +137,13 @@ h1 {
   width: 80%;
   margin: 10px auto 20px;
 }
+
+.icon-part button {
+  padding: 9px 32px;
+}
+
+/*--- NEWS---*/
+
+.news-part {
+  background: rgba(245, 245, 245, 0.8);
+}

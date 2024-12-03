@@ -11,8 +11,46 @@ body {
   margin: 0 auto;
 }
 
+button {
+  background: none;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid rgb(85, 83, 83);
+  border-radius: 20px;
+  padding: 10px 15px;
+  transition: 0.4s ease;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  background: rgb(85, 83, 83);
+  color: whitesmoke;
+  border-color: whitesmoke;
+}
+
+/*--- HEADER ---*/
+
+.main-header {
+  background: red;
+}
+
 /*--- RUN PART ---*/
+
+.run-part {
+  background: blue;
+}
 
 /*--- CONTACT ---*/
 
+.contact-part {
+  background: violet;
+}
+
 /*--- FOOTER ---*/
+
+footer {
+  background: green;
+}

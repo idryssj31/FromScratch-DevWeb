@@ -1,5 +1,18 @@
 /*--- GENERAL VALUE ---*/
 
+* {
+  margin: 0;
+  padding: 0;
+  block-size: border-box;
+}
+
 body {
   background: chocolate;
+  margin: 0 auto;
 }
+
+/*--- RUN PART ---*/
+
+/*--- CONTACT ---*/
+
+/*--- FOOTER ---*/

@@ -1,14 +1,84 @@
 /*--- GENERAL VALUE ---*/
 
+@font-face {
+  font-family: "Source Code Pro";
+  src: url(./assets/fonts/SourceCodePro-Light.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
   block-size: border-box;
+  list-style-type: none;
 }
 
 body {
-  background: chocolate;
   margin: 0 auto;
+  font-family: "Source Code Pro", sans-serif;
+}
+
+a,
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.button {
+  background: transparent;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid rgb(85, 83, 83);
+  border-radius: 20px;
+  padding: 10px 15px;
+  transition: 0.4s ease;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  font: 700 0.75rem "Source Code Pro";
+}
+
+.button:hover {
+  background: rgb(85, 83, 83);
+  color: whitesmoke;
+  border-color: whitesmoke;
+}
+
+h1 {
+  font-size: 3.4rem;
+  font-weight: 200;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+
+p {
+  line-height: 36px;
+  margin: 25px 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 55px;
+}
+
+/*--- HEADER ---*/
+
+header {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.img-part {
+  background: url(./assets/img/banner.jpg) right/cover;
 }
 
 /*--- RUN PART ---*/
@@ -16,3 +86,7 @@ body {
 /*--- CONTACT ---*/
 
 /*--- FOOTER ---*/
+
+footer a:hover {
+  color: skyblue;
+}

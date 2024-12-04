@@ -1,5 +1,10 @@
 /*--- GENERAL VALUE ---*/
 
+@font-face {
+  font-family: "Source Code Pro";
+  src: url(./assets/fonts/SourceCodePro-Light.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,9 +13,10 @@
 
 body {
   margin: 0 auto;
+  font-family: "Source Code Pro", sans-serif;
 }
 
-button {
+.button {
   background: none;
   outline: none;
   text-transform: uppercase;

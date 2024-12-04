@@ -13,86 +13,104 @@
 
   <body>
     <header>
-      <div class="main-header">
-        <div class="main-header-container">
-          <div class="infos-part">
-            <h1>Run</h1>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt
-              iure voluptate laboriosam quia expedita esse provident asperiores,
-              ducimus libero quis illo dolorem numquam non nulla. Facilis
-              voluptate dicta ut fugit.
-            </p>
-            <button>get started</button>
-          </div>
-          <div class="img-part">
-            <img src="./assets/img/banner.jpg" alt="img of a race track" />
-          </div>
+      <div class="container">
+        <div class="infos-part">
+          <h1>Run</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt
+            iure voluptate laboriosam quia expedita esse provident asperiores,
+            ducimus libero quis illo dolorem numquam non nulla. Facilis
+            voluptate dicta ut fugit.
+          </p>
+          <a href="#" class="button">get started</a>
         </div>
       </div>
+      <div class="img-part">
+        <img src="./assets/img/banner.jpg" alt="img of a race track" />
+      </div>
     </header>
-    <section class="run-part">
-      <div class="run-part-container">
-        <div class="first-part">
-          <div class="infos-part">
-            <h2>Magna etiam feugiat</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil,
-              ut cupiditate aliquid atque mollitia delectus maiores fugit veniam
-              optio totam aperiam reprehenderit saepe, voluptatibus, incidunt
-              nostrum quo dolores vel asperiores?
-            </p>
-            <button>learn more</button>
-          </div>
-          <div class="img-part">
-            <img src="./assets/img/img-left.jpg" alt="img of a race track" />
-          </div>
+    <section class="run-part1">
+      <div class="img-part">
+        <img src="./assets/img/img-left.jpg" alt="img of a race track" />
+      </div>
+      <div class="container">
+        <div class="infos-part">
+          <h2>Magna etiam feugiat</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, ut
+            cupiditate aliquid atque mollitia delectus maiores fugit veniam
+            optio totam aperiam reprehenderit saepe, voluptatibus, incidunt
+            nostrum quo dolores vel asperiores?
+          </p>
+          <a href="#" class="button">learn more</a>
         </div>
-        <div class="second-part">
-          <div class="infos-part">
-            <h2>Tempus adipiscing</h2>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat,
-              culpa? Architecto, obcaecati excepturi sunt nam possimus
-              repudiandae culpa nostrum. Minima nobis atque similique rem rerum
-              laborum asperiores, nulla quo laboriosam.
-            </p>
-            <button>learn more</button>
-          </div>
-          <div class="img-part">
-            <img src="./assets/img/img-right.jpg" alt="img of a race track" />
-          </div>
+      </div>
+    </section>
+    <section class="run-part2">
+      <div class="container">
+        <div class="infos-part">
+          <h2>Tempus adipiscing</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat,
+            culpa? Architecto, obcaecati excepturi sunt nam possimus repudiandae
+            culpa nostrum. Minima nobis atque similique rem rerum laborum
+            asperiores, nulla quo laboriosam.
+          </p>
+          <a href="#" class="button">learn more</a>
         </div>
+      </div>
+      <div class="img-part">
+        <img src="./assets/img/img-right.jpg" alt="img of a race track" />
       </div>
     </section>
     <section class="contact-part">
-      <div class="contact-part-container">
-        <h3>Get in touch</h3>
-        <div class="contact-name">
-          <p>Name</p>
-          <input type="text" />
+      <h3>Get in touch</h3>
+      <form action="#">
+        <div class="form-grid">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="text" id="email" />
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message"></textarea>
+          </div>
         </div>
-        <div class="contact-e-mail">
-          <p>Email</p>
-          <input type="text" />
-        </div>
-        <div class="contact-message">
-          <p>Message</p>
-          <input type="text" />
-        </div>
-        <div class="contact-button">
-          <button>send message</button>
-        </div>
-      </div>
+        <input type="submit" class="button" value="Send Message" />
+      </form>
     </section>
     <footer>
-      <div class="footer-logos">
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-linkedin"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fa-regular fa-envelope"></i>
-      </div>
+      <ul>
+        <li>
+          <a href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="far fa-envelope"></i>
+          </a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>

@@ -7,7 +7,6 @@
 }
 
 body {
-  background: chocolate;
   margin: 0 auto;
 }
 
@@ -23,6 +22,7 @@ button {
   transition: 0.4s ease;
   font-size: 0.7rem;
   letter-spacing: 1px;
+  margin-top: 20px;
 }
 
 button:hover {
@@ -31,26 +31,69 @@ button:hover {
   border-color: whitesmoke;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+}
+
+p {
+  line-height: 2rem;
+  letter-spacing: 1px;
+  margin-top: 30px;
+}
+
+h2 {
+  font-size: 1.9rem;
+}
+
+.infos-part {
+  margin: 50px 50px 0 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*--- HEADER ---*/
 
-.main-header {
-  background: red;
+.main-header-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.main-header-container .infos-part {
+  margin-top: 100px;
+}
+
+.main-header-container .img-part {
 }
 
 /*--- RUN PART ---*/
 
-.run-part {
-  background: blue;
+.first-part {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.second-part {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.second-part .img-part {
 }
 
 /*--- CONTACT ---*/
 
-.contact-part {
-  background: violet;
+.contact-part h3,
+p {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 /*--- FOOTER ---*/
 
 footer {
-  background: green;
 }

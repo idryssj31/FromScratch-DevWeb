@@ -1,0 +1,13 @@
+@import "./settings";
+@import "./layouts/header";
+
+h1 {
+  font-family: Inter-ExtraBold, sans-serif;
+}
+
+.main-part {
+  .img-part {
+    background: url(../img/pic01.jpg);
+    min-height: 100px;
+  }
+}

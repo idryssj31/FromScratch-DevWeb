@@ -1,0 +1,39 @@
+/*---MIXINS---*/
+@mixin centerChild {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@mixin resetValue {
+  margin: 0;
+  padding: 0;
+  block-size: border-box;
+  list-style: none;
+}
+
+/*---VARIABLES---*/
+$black: rgb(23, 23, 23);
+$white: rgb(241, 241, 241);
+$grey: rgb(58, 58, 58);
+
+@font-face {
+  font-family: "Merriweather-Light";
+  src: url(../fonts/Merriweather-Light.ttf);
+}
+
+@font-face {
+  font-family: "Inter-ExtraBold";
+  src: url(../fonts/Inter-ExtraBold.ttf);
+}
+
+* {
+  @include resetValue;
+  font-family: Merriweather-Light, sans-serif;
+}
+
+body {
+  text-align: center;
+  background: url(../img/bg.jpg) fixed center/cover;
+}

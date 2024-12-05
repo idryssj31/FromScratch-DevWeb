@@ -1,0 +1,11 @@
+nav {
+  background: pink;
+  border-radius: 10px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+nav ul li {
+  list-style: none;
+}/*# sourceMappingURL=index.css.map */

@@ -1,13 +1,4 @@
-nav {
-  background: pink;
-  border-radius: 10px;
-
-  ul {
-    display: flex;
-    justify-content: space-around;
-
-    li {
-      list-style: none;
-    }
-  }
-}
+@import "./settings";
+@import "./layout/navbar";
+@import "./layout/section";
+@import "./layout/header";

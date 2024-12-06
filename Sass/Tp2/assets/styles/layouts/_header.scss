@@ -1,6 +1,5 @@
 header {
   padding: 100px 200px;
-  background: red;
   h1 {
     @include title;
     color: $white;

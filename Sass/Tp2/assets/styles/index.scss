@@ -1,14 +1,28 @@
 @import "./settings";
 @import "./layouts/header";
 @import "./components/button";
+@import "./layouts/navbar";
 
 h1 {
   font-family: Inter-ExtraBold, sans-serif;
 }
 
 .main-part {
+  background: aquamarine;
+  min-height: 800px;
   .img-part {
-    background: url(../img/pic01.jpg);
+    //background: url(../img/pic01.jpg);
     min-height: 100px;
   }
+}
+
+.second-part {
+  background: maroon;
+  min-height: 500px;
+}
+
+.contact-part {
+  background: gray;
+  margin-top: 30px;
+  min-height: 500px;
 }

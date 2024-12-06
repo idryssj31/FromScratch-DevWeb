@@ -1,4 +1,31 @@
 nav {
-  background: blanchedalmond;
-  
+  @include gridMiddle;
+  min-height: 50px;
+  ul {
+    background: rgba(255, 255, 255, 0.349);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    a {
+      text-decoration: none;
+      font-family: Inter-ExtraBold, serif;
+      font-size: 0.7rem;
+      color: $white;
+      transition: 0.4s;
+    }
+  }
+
+  .nav-left {
+    a:hover {
+      color: $black;
+    }
+  }
+
+  .nav-right {
+    a:hover {
+      color: skyblue;
+    }
+  }
 }

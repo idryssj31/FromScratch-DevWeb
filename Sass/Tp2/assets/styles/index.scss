@@ -3,26 +3,57 @@
 @import "./components/button";
 @import "./layouts/navbar";
 
-h1 {
-  font-family: Inter-ExtraBold, sans-serif;
+h2 {
+  @include title;
+}
+h3 {
+  @include articleTitle;
+}
+h4 {
+  @include dataTitle;
+}
+p {
+  @include text;
 }
 
 .main-part {
-  background: aquamarine;
-  min-height: 800px;
+  background: $white;
+  min-height: 1200px;
   .img-part {
-    //background: url(../img/pic01.jpg);
-    min-height: 100px;
+    background: url(../img/pic01.jpg) center/cover;
+    min-height: 700px;
+    margin: 0 80px;
   }
 }
 
 .second-part {
-  background: maroon;
-  min-height: 500px;
+  background: $white;
+  min-height: 650px;
+  @include gridMiddle;
+
+  .container:nth-child(1) {
+    .img-part {
+      background: url(../img/pic02.jpg) center/cover;
+      @include resizeImg;
+    }
+  }
+  .container:nth-child(2) {
+    .img-part {
+      background: url(../img/pic03.jpg) center/cover;
+      @include resizeImg;
+    }
+  }
+  p {
+    text-align: left;
+  }
 }
 
 .contact-part {
-  background: gray;
+  background: $white;
   margin-top: 30px;
   min-height: 500px;
+}
+
+.second-part .container {
+  border: 1px solid rgba(219, 211, 211, 0.397);
 }

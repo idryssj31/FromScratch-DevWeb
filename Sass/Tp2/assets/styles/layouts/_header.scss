@@ -1,15 +1,12 @@
 header {
   padding: 100px 200px;
-  background: red;
   h1 {
+    @include title;
     color: $white;
   }
   p {
-    font-weight: 600;
-    font-size: 0.9rem;
-    margin: 40px 0;
+    @include text;
     color: $white;
-    font-family: Merriweather-Light, sans-serif;
-    font-style: italic;
+    margin: 40px 0;
   }
 }

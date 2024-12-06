@@ -1,0 +1,19 @@
+.button {
+  text-decoration: none;
+  color: $black;
+  background: $white;
+  border: 2px solid $black;
+  padding: 15px 40px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  font-family: "Inter-ExtraBold", sans-serif;
+  transition: 0.4s;
+}
+
+.button:hover {
+  color: $white;
+  background: $black;
+  border-color: $white;
+}

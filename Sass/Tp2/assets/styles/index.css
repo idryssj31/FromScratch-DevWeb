@@ -69,6 +69,7 @@ header p {
 nav {
   display: grid;
   grid-template-columns: 50% 50%;
+  gap: 0px;
 }
 nav ul {
   background: blanchedalmond;
@@ -110,15 +111,23 @@ p {
 .second-part {
   background: maroon;
   min-height: 500px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 0px;
+}
+.second-part .container:nth-child(1) .img-part {
+  background: url(../img/pic02.jpg) center/cover;
+  min-height: 300px;
+  margin: 0 55px;
+}
+.second-part .container:nth-child(2) .img-part {
+  background: url(../img/pic03.jpg) center/cover;
+  min-height: 300px;
+  margin: 0 55px;
 }
 
 .contact-part {
   background: gray;
   margin-top: 30px;
   min-height: 500px;
-}
-
-.container {
-  background: violet;
-  margin: 0 100px;
 }/*# sourceMappingURL=index.css.map */

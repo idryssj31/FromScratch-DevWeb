@@ -4,7 +4,7 @@
 @import "./layouts/navbar";
 
 h3 {
-  @include datatitle;
+  @include dataTitle;
 }
 
 h2 {
@@ -15,10 +15,6 @@ p {
   @include text;
 }
 
-.container {
-  background: violet;
-  margin: 0 100px;
-}
 .main-part {
   background: aquamarine;
   min-height: 1200px;
@@ -31,6 +27,20 @@ p {
 .second-part {
   background: maroon;
   min-height: 500px;
+  @include gridMiddle;
+
+  .container:nth-child(1) {
+    .img-part {
+      background: url(../img/pic02.jpg) center/cover;
+      @include resizeImg;
+    }
+  }
+  .container:nth-child(2) {
+    .img-part {
+      background: url(../img/pic03.jpg) center/cover;
+      @include resizeImg;
+    }
+  }
 }
 
 .contact-part {

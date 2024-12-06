@@ -13,6 +13,30 @@
   list-style: none;
 }
 
+@mixin title {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 2.7rem;
+  font-family: Inter-ExtraBold, sans-serif;
+}
+
+@mixin text {
+  font-weight: 600;
+  font-size: 0.9rem;
+  font-family: Merriweather-Light, sans-serif;
+  font-style: italic;
+  margin: 40px;
+}
+
+@mixin dataTitle {
+  padding: 50px 0;
+}
+
+@mixin gridMiddle {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
 /*---VARIABLES---*/
 $black: rgb(23, 23, 23);
 $white: rgb(241, 241, 241);

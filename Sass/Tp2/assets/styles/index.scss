@@ -3,16 +3,28 @@
 @import "./components/button";
 @import "./layouts/navbar";
 
-h1 {
-  font-family: Inter-ExtraBold, sans-serif;
+h3 {
+  @include datatitle;
 }
 
+h2 {
+  @include title;
+}
+
+p {
+  @include text;
+}
+
+.container {
+  background: violet;
+  margin: 0 100px;
+}
 .main-part {
   background: aquamarine;
-  min-height: 800px;
+  min-height: 1200px;
   .img-part {
-    //background: url(../img/pic01.jpg);
-    min-height: 100px;
+    background: url(../img/pic01.jpg) center/cover;
+    min-height: 700px;
   }
 }
 

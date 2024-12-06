@@ -1,4 +1,8 @@
 nav {
-  background: blanchedalmond;
-  
+  @include gridMiddle;
+  ul {
+    background: blanchedalmond;
+    display: flex;
+    justify-content: space-around;
+  }
 }

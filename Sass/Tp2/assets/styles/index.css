@@ -29,15 +29,20 @@ header {
   background: red;
 }
 header h1 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 2.7rem;
+  font-family: Inter-ExtraBold, sans-serif;
   color: rgb(241, 241, 241);
 }
 header p {
   font-weight: 600;
   font-size: 0.9rem;
-  margin: 40px 0;
-  color: rgb(241, 241, 241);
   font-family: Merriweather-Light, sans-serif;
   font-style: italic;
+  margin: 40px;
+  color: rgb(241, 241, 241);
+  margin: 40px 0;
 }
 
 .button {
@@ -62,19 +67,44 @@ header p {
 }
 
 nav {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+nav ul {
   background: blanchedalmond;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-h1 {
+h3 {
+  padding: 50px 0;
+}
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 2.7rem;
   font-family: Inter-ExtraBold, sans-serif;
+}
+
+p {
+  font-weight: 600;
+  font-size: 0.9rem;
+  font-family: Merriweather-Light, sans-serif;
+  font-style: italic;
+  margin: 40px;
 }
 
 .main-part {
   background: aquamarine;
-  min-height: 800px;
+  min-height: 1200px;
 }
 .main-part .img-part {
-  min-height: 100px;
+  background: url(../img/pic01.jpg) center/cover;
+  min-height: 700px;
 }
 
 .second-part {
@@ -86,4 +116,9 @@ h1 {
   background: gray;
   margin-top: 30px;
   min-height: 500px;
+}
+
+.container {
+  background: violet;
+  margin: 0 100px;
 }/*# sourceMappingURL=index.css.map */

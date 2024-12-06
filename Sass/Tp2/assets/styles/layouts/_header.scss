@@ -1,12 +1,14 @@
 header {
   padding: 100px 200px;
   h1 {
+    color: $white;
   }
   p {
     font-weight: 600;
     font-size: 0.9rem;
     margin: 40px 0;
     color: $white;
-    font-family: Inter-ExtraBold, sans-serif;
+    font-family: Merriweather-Light, sans-serif;
+    font-style: italic;
   }
 }

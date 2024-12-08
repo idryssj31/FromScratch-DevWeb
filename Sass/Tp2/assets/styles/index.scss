@@ -49,9 +49,17 @@ p {
 }
 
 .contact-part {
-  background: $white;
+  @include gridMiddle;
+  background: $grey;
   margin-top: 30px;
   min-height: 500px;
+  .form-part {
+    margin: 30px;
+    justify-items: left;
+  }
+  .info-part > div {
+    border: 1px solid rgba(219, 211, 211, 0.397);
+  }
 }
 
 .second-part .container {

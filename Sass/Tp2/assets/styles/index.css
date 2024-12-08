@@ -99,6 +99,19 @@ nav .nav-right a:hover {
   color: skyblue;
 }
 
+footer {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
 h2 {
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -171,6 +184,8 @@ p {
 }
 .contact-part .info-part > div {
   border: 1px solid rgba(219, 211, 211, 0.397);
+  display: grid;
+  grid-template-columns: 20% 80%;
 }
 
 .second-part .container {

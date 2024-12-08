@@ -2,6 +2,7 @@
 @import "./layouts/header";
 @import "./components/button";
 @import "./layouts/navbar";
+@import "./layouts/footer";
 
 h2 {
   @include title;
@@ -59,6 +60,7 @@ p {
   }
   .info-part > div {
     border: 1px solid rgba(219, 211, 211, 0.397);
+    @include gridForm;
   }
 }
 

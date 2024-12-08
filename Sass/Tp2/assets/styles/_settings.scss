@@ -46,6 +46,11 @@
   gap: 0px;
 }
 
+@mixin gridForm {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
 @mixin resizeImg {
   min-height: 300px;
   margin: 0 55px;

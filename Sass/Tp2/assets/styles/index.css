@@ -158,9 +158,19 @@ p {
 }
 
 .contact-part {
-  background: rgb(255, 255, 255);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 0px;
+  background: rgb(243, 243, 243);
   margin-top: 30px;
   min-height: 500px;
+}
+.contact-part .form-part {
+  margin: 30px;
+  justify-items: left;
+}
+.contact-part .info-part > div {
+  border: 1px solid rgba(219, 211, 211, 0.397);
 }
 
 .second-part .container {

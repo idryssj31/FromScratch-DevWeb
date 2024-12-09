@@ -4,10 +4,10 @@ nav {
   ul {
     background: rgba(255, 255, 255, 0.349);
     display: flex;
-    justify-content: space-around;
     align-items: center;
     text-transform: uppercase;
     letter-spacing: 1px;
+
     a {
       text-decoration: none;
       font-family: Inter-ExtraBold, serif;
@@ -17,12 +17,26 @@ nav {
     }
   }
 
-  .nav-left {
-    a:hover {
-      color: $black;
+  .nav-left,
+  .nav-right {
+    li {
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+    li:hover {
+      background-color: $grey;
+      a {
+        color: $black;
+      }
     }
   }
 
+  .nav-left {
+    li {
+      padding: 0 10px;
+    }
+  }
   .nav-right {
     padding-left: 500px;
     a {

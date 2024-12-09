@@ -88,8 +88,6 @@ nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -104,8 +102,26 @@ nav ul a {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-nav .nav-left a:hover {
+nav .nav-left li,
+nav .nav-right li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+nav .nav-left li:hover,
+nav .nav-right li:hover {
+  background-color: rgb(243, 243, 243);
+}
+nav .nav-left li:hover a,
+nav .nav-right li:hover a {
   color: rgb(23, 23, 23);
+}
+nav .nav-left li {
+  padding: 0 10px;
 }
 nav .nav-right {
   padding-left: 500px;

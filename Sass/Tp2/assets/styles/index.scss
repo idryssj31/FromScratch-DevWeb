@@ -25,6 +25,11 @@ p {
     min-height: 700px;
     margin: 0 80px;
   }
+  .info-part h2,
+  p {
+    max-width: 550px;
+    margin: auto auto;
+  }
 }
 
 .second-part {

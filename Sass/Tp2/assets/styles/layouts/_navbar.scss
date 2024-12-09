@@ -38,7 +38,10 @@ nav {
     }
   }
   .nav-right {
-    padding-left: 500px;
+    justify-content: right;
+    li {
+      padding: 0 20px;
+    }
     a {
       font-size: 0.9rem;
     }

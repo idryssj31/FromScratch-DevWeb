@@ -124,7 +124,12 @@ nav .nav-left li {
   padding: 0 10px;
 }
 nav .nav-right {
-  padding-left: 500px;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+nav .nav-right li {
+  padding: 0 20px;
 }
 nav .nav-right a {
   font-size: 0.9rem;

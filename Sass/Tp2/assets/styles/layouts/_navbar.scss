@@ -24,6 +24,10 @@ nav {
   }
 
   .nav-right {
+    padding-left: 500px;
+    a {
+      font-size: 0.9rem;
+    }
     a:hover {
       color: skyblue;
     }

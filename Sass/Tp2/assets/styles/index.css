@@ -25,12 +25,12 @@ body {
 }
 
 header {
-  padding: 100px 200px;
+  padding: 230px 200px 150px 200px;
 }
 header h1 {
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-size: 2.7rem;
+  font-size: 3rem;
   font-family: Inter-ExtraBold, sans-serif;
   color: rgb(255, 255, 255);
 }
@@ -41,7 +41,19 @@ header p {
   font-style: italic;
   margin: 40px;
   color: rgb(255, 255, 255);
-  margin: 40px 0;
+  margin: 50px 0 100px;
+}
+header a {
+  color: rgb(255, 255, 255);
+  font-size: 1.3rem;
+  border-radius: 30px;
+  border: 1px solid;
+  padding: 10px 13px 10px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+header a:hover {
+  border-color: rgb(23, 23, 23);
 }
 
 .button {
@@ -95,6 +107,12 @@ nav ul a {
 nav .nav-left a:hover {
   color: rgb(23, 23, 23);
 }
+nav .nav-right {
+  padding-left: 500px;
+}
+nav .nav-right a {
+  font-size: 0.9rem;
+}
 nav .nav-right a:hover {
   color: skyblue;
 }
@@ -115,7 +133,7 @@ footer ul {
 h2 {
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-size: 2.7rem;
+  font-size: 3rem;
   font-family: Inter-ExtraBold, sans-serif;
 }
 

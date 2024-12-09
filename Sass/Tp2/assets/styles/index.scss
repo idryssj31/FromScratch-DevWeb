@@ -2,6 +2,7 @@
 @import "./layouts/header";
 @import "./components/button";
 @import "./layouts/navbar";
+@import "./layouts/footer";
 
 h2 {
   @include title;
@@ -23,6 +24,11 @@ p {
     background: url(../img/pic01.jpg) center/cover;
     min-height: 700px;
     margin: 0 80px;
+  }
+  .info-part h2,
+  p {
+    max-width: 550px;
+    margin: auto auto;
   }
 }
 
@@ -59,6 +65,7 @@ p {
   }
   .info-part > div {
     border: 1px solid rgba(219, 211, 211, 0.397);
+    @include gridForm;
   }
 }
 

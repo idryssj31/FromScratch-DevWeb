@@ -200,7 +200,7 @@ p {
 
 .second-part {
   background: rgb(255, 255, 255);
-  min-height: 750px;
+  min-height: 830px;
   display: grid;
   grid-template-columns: 50% 50%;
   gap: 0px;
@@ -208,15 +208,22 @@ p {
 .second-part .container:nth-child(1) .img-part {
   background: url(../img/pic02.jpg) center/cover;
   min-height: 300px;
-  margin: 0 55px;
+  margin: 0 100px;
 }
 .second-part .container:nth-child(2) .img-part {
   background: url(../img/pic03.jpg) center/cover;
   min-height: 300px;
-  margin: 0 55px;
+  margin: 0 100px;
 }
 .second-part p {
   text-align: left;
+  margin: 0 100px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+.second-part h3 {
+  max-width: 240px;
+  margin: auto auto 25px auto;
 }
 
 .contact-part {

@@ -56,7 +56,11 @@
 
 @mixin resizeImg {
   min-height: 300px;
-  margin: 0 55px;
+  margin: 0 100px;
+}
+
+@mixin resizeText {
+  margin: 0 100px;
 }
 
 /*---VARIABLES---*/

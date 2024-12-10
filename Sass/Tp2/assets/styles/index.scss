@@ -34,7 +34,7 @@ p {
 
 .second-part {
   background: $white;
-  min-height: 750px;
+  min-height: 830px;
   @include gridMiddle;
 
   .container:nth-child(1) {
@@ -51,6 +51,13 @@ p {
   }
   p {
     text-align: left;
+    @include resizeText;
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+  h3 {
+    max-width: 240px;
+    margin: auto auto 25px auto;
   }
 }
 

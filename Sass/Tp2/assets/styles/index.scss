@@ -3,6 +3,7 @@
 @import "./components/button";
 @import "./layouts/navbar";
 @import "./layouts/footer";
+@import "./components/form";
 
 h2 {
   @include title;
@@ -61,21 +62,39 @@ p {
   }
 }
 
+.second-part .container {
+  border: 1px solid rgba(219, 211, 211, 0.397);
+}
 .contact-part {
   @include gridMiddle;
   background: $grey;
   margin-top: 30px;
-  min-height: 500px;
-  .form-part {
-    margin: 30px;
-    justify-items: left;
+  min-height: 400px;
+  margin-bottom: 50px;
+
+  .info-part {
+    display: grid;
+    grid-template-rows: 25%25%25%25%;
+    h3 {
+      @include contactTitle;
+    }
+    p{
+      @include contactText;
+      max-width: 300px;
+      margin: 0 auto;
+      text-align: left;
+    }
   }
-  .info-part > div {
+
+  .info-part > div,
+  footer {
     border: 1px solid rgba(219, 211, 211, 0.397);
     @include gridForm;
+    margin: 0 0;
+    h3,
+    p,
+    li {
+      margin: auto 0;
+    }
   }
-}
-
-.second-part .container {
-  border: 1px solid rgba(219, 211, 211, 0.397);
 }

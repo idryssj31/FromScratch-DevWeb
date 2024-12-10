@@ -1,7 +1,21 @@
 footer {
   @include gridForm;
+  margin: auto 0;
   ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: left;
+
+    a {
+      color: $black;
+      font-size: 0.9rem;
+      border-radius: 30px;
+      border: 1px solid grey;
+      padding: 10px 13px 10px;
+      transition: 0.4s;
+      margin-right: 15px;
+    }
+    a:hover {
+      color: $white;
+    }
   }
 }

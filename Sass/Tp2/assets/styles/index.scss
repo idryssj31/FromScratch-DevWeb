@@ -3,6 +3,7 @@
 @import "./components/button";
 @import "./layouts/navbar";
 @import "./layouts/footer";
+@import "./components/form";
 
 h2 {
   @include title;
@@ -19,22 +20,22 @@ p {
 
 .main-part {
   background: $white;
-  min-height: 1200px;
+  min-height: 1400px;
   .img-part {
     background: url(../img/pic01.jpg) center/cover;
     min-height: 700px;
-    margin: 0 80px;
+    margin: 0 130px 100px 130px;
   }
   .info-part h2,
   p {
     max-width: 550px;
-    margin: auto auto;
+    margin: auto auto 30px auto;
   }
 }
 
 .second-part {
   background: $white;
-  min-height: 650px;
+  min-height: 830px;
   @include gridMiddle;
 
   .container:nth-child(1) {
@@ -51,24 +52,49 @@ p {
   }
   p {
     text-align: left;
+    @include resizeText;
+    margin-top: 30px;
+    margin-bottom: 60px;
   }
-}
-
-.contact-part {
-  @include gridMiddle;
-  background: $grey;
-  margin-top: 30px;
-  min-height: 500px;
-  .form-part {
-    margin: 30px;
-    justify-items: left;
-  }
-  .info-part > div {
-    border: 1px solid rgba(219, 211, 211, 0.397);
-    @include gridForm;
+  h3 {
+    max-width: 240px;
+    margin: auto auto 25px auto;
   }
 }
 
 .second-part .container {
   border: 1px solid rgba(219, 211, 211, 0.397);
+}
+.contact-part {
+  @include gridMiddle;
+  background: $grey;
+  margin-top: 30px;
+  min-height: 400px;
+  margin-bottom: 50px;
+
+  .info-part {
+    display: grid;
+    grid-template-rows: 25%25%25%25%;
+    h3 {
+      @include contactTitle;
+    }
+    p{
+      @include contactText;
+      max-width: 300px;
+      margin: 0 auto;
+      text-align: left;
+    }
+  }
+
+  .info-part > div,
+  footer {
+    border: 1px solid rgba(219, 211, 211, 0.397);
+    @include gridForm;
+    margin: 0 0;
+    h3,
+    p,
+    li {
+      margin: auto 0;
+    }
+  }
 }

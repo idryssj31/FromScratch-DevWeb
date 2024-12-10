@@ -40,6 +40,22 @@
   font-family: Merriweather-Light, sans-serif;
   font-style: italic;
   margin: 40px;
+  line-height: 40px;
+}
+
+@mixin contactText {
+  font-family: Merriweather-Light, sans-serif;
+  font-size: 1rem;
+  color: grey;
+  font-style: none;
+}
+
+@mixin contactTitle {
+  font-family: Inter-ExtraBold, sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: grey;
 }
 
 @mixin gridMiddle {
@@ -50,12 +66,16 @@
 
 @mixin gridForm {
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 35% 65%;
 }
 
 @mixin resizeImg {
   min-height: 300px;
-  margin: 0 55px;
+  margin: 0 100px;
+}
+
+@mixin resizeText {
+  margin: 0 100px;
 }
 
 /*---VARIABLES---*/

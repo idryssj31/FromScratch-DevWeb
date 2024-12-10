@@ -1,0 +1,28 @@
+.form-part {
+  margin: 50px;
+  max-width: 900px;
+  text-transform: uppercase;
+  text-align: left;
+  #name,
+  #email,
+  #message {
+    border: 1px solid rgba(219, 211, 211, 0.397);
+    background: $grey;
+    height: 50px;
+    width: 759px;
+    max-width: 759px;
+    margin: 20px 0;
+    border-radius: 5px;
+  }
+
+  label,
+  .button {
+    @include contactTitle;
+    border-color: grey;
+  }
+
+  #message {
+    height: 250px;
+    margin-bottom: 50px;
+  }
+}

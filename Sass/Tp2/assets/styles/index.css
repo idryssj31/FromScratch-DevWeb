@@ -41,6 +41,7 @@ header p {
   font-family: Merriweather-Light, sans-serif;
   font-style: italic;
   margin: 40px;
+  line-height: 40px;
   color: rgb(255, 255, 255);
   margin: 50px 0 100px;
 }
@@ -67,7 +68,7 @@ header a:hover {
   font-weight: 900;
   font-size: 0.9rem;
   letter-spacing: 2px;
-  font-family: "Inter-ExtraBold", sans-serif;
+  font-family: Inter-ExtraBold, sans-serif;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -141,15 +142,60 @@ nav .nav-right a:hover {
 
 footer {
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 35% 65%;
+  margin: auto 0;
 }
 footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+footer ul a {
+  color: rgb(23, 23, 23);
+  font-size: 0.9rem;
+  border-radius: 30px;
+  border: 1px solid grey;
+  padding: 10px 13px 10px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin-right: 15px;
+}
+footer ul a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.form-part {
+  margin: 50px;
+  max-width: 900px;
+  text-transform: uppercase;
+  text-align: left;
+}
+.form-part #name,
+.form-part #email,
+.form-part #message {
+  border: 1px solid rgba(219, 211, 211, 0.397);
+  background: rgb(243, 243, 243);
+  height: 50px;
+  width: 759px;
+  max-width: 759px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+.form-part label,
+.form-part .button {
+  font-family: Inter-ExtraBold, sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: grey;
+  border-color: grey;
+}
+.form-part #message {
+  height: 250px;
+  margin-bottom: 50px;
 }
 
 h2 {
@@ -179,26 +225,27 @@ p {
   font-family: Merriweather-Light, sans-serif;
   font-style: italic;
   margin: 40px;
+  line-height: 40px;
 }
 
 .main-part {
   background: rgb(255, 255, 255);
-  min-height: 1200px;
+  min-height: 1400px;
 }
 .main-part .img-part {
   background: url(../img/pic01.jpg) center/cover;
   min-height: 700px;
-  margin: 0 80px;
+  margin: 0 130px 100px 130px;
 }
 .main-part .info-part h2,
 .main-part p {
   max-width: 550px;
-  margin: auto auto;
+  margin: auto auto 30px auto;
 }
 
 .second-part {
   background: rgb(255, 255, 255);
-  min-height: 650px;
+  min-height: 830px;
   display: grid;
   grid-template-columns: 50% 50%;
   gap: 0px;
@@ -206,15 +253,26 @@ p {
 .second-part .container:nth-child(1) .img-part {
   background: url(../img/pic02.jpg) center/cover;
   min-height: 300px;
-  margin: 0 55px;
+  margin: 0 100px;
 }
 .second-part .container:nth-child(2) .img-part {
   background: url(../img/pic03.jpg) center/cover;
   min-height: 300px;
-  margin: 0 55px;
+  margin: 0 100px;
 }
 .second-part p {
   text-align: left;
+  margin: 0 100px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+.second-part h3 {
+  max-width: 240px;
+  margin: auto auto 25px auto;
+}
+
+.second-part .container {
+  border: 1px solid rgba(219, 211, 211, 0.397);
 }
 
 .contact-part {
@@ -223,18 +281,41 @@ p {
   gap: 0px;
   background: rgb(243, 243, 243);
   margin-top: 30px;
-  min-height: 500px;
+  min-height: 400px;
+  margin-bottom: 50px;
 }
-.contact-part .form-part {
-  margin: 30px;
-  justify-items: left;
+.contact-part .info-part {
+  display: grid;
+  grid-template-rows: 25% 25% 25% 25%;
 }
-.contact-part .info-part > div {
+.contact-part .info-part h3 {
+  font-family: Inter-ExtraBold, sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: grey;
+}
+.contact-part .info-part p {
+  font-family: Merriweather-Light, sans-serif;
+  font-size: 1rem;
+  color: grey;
+  font-style: none;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: left;
+}
+.contact-part .info-part > div,
+.contact-part footer {
   border: 1px solid rgba(219, 211, 211, 0.397);
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 35% 65%;
+  margin: 0 0;
 }
-
-.second-part .container {
-  border: 1px solid rgba(219, 211, 211, 0.397);
+.contact-part .info-part > div h3,
+.contact-part .info-part > div p,
+.contact-part .info-part > div li,
+.contact-part footer h3,
+.contact-part footer p,
+.contact-part footer li {
+  margin: auto 0;
 }/*# sourceMappingURL=index.css.map */

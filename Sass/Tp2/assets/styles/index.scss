@@ -19,22 +19,22 @@ p {
 
 .main-part {
   background: $white;
-  min-height: 1200px;
+  min-height: 1400px;
   .img-part {
     background: url(../img/pic01.jpg) center/cover;
     min-height: 700px;
-    margin: 0 80px;
+    margin: 0 130px 100px 130px;
   }
   .info-part h2,
   p {
     max-width: 550px;
-    margin: auto auto;
+    margin: auto auto 30px auto;
   }
 }
 
 .second-part {
   background: $white;
-  min-height: 650px;
+  min-height: 750px;
   @include gridMiddle;
 
   .container:nth-child(1) {

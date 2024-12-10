@@ -41,6 +41,7 @@ header p {
   font-family: Merriweather-Light, sans-serif;
   font-style: italic;
   margin: 40px;
+  line-height: 40px;
   color: rgb(255, 255, 255);
   margin: 50px 0 100px;
 }
@@ -179,26 +180,27 @@ p {
   font-family: Merriweather-Light, sans-serif;
   font-style: italic;
   margin: 40px;
+  line-height: 40px;
 }
 
 .main-part {
   background: rgb(255, 255, 255);
-  min-height: 1200px;
+  min-height: 1400px;
 }
 .main-part .img-part {
   background: url(../img/pic01.jpg) center/cover;
   min-height: 700px;
-  margin: 0 80px;
+  margin: 0 130px 100px 130px;
 }
 .main-part .info-part h2,
 .main-part p {
   max-width: 550px;
-  margin: auto auto;
+  margin: auto auto 30px auto;
 }
 
 .second-part {
   background: rgb(255, 255, 255);
-  min-height: 650px;
+  min-height: 750px;
   display: grid;
   grid-template-columns: 50% 50%;
   gap: 0px;

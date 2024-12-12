@@ -48,5 +48,8 @@ nav {
     a:hover {
       color: skyblue;
     }
+    @media screen and (max-width: 700px) {
+      display: none;
+    }
   }
 }

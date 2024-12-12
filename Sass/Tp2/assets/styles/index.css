@@ -27,6 +27,11 @@ body {
 header {
   padding: 150px 200px 150px 200px;
 }
+@media screen and (max-width: 900px) {
+  header {
+    padding: 150px 0 150px 0;
+  }
+}
 header h1 {
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -34,6 +39,11 @@ header h1 {
   font-family: Inter-ExtraBold, sans-serif;
   margin-top: 45px;
   color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 900px) {
+  header h1 {
+    font-size: 2rem;
+  }
 }
 header p {
   font-weight: 500;
@@ -138,6 +148,11 @@ nav .nav-right a {
 }
 nav .nav-right a:hover {
   color: skyblue;
+}
+@media screen and (max-width: 700px) {
+  nav .nav-right {
+    display: none;
+  }
 }
 
 footer {

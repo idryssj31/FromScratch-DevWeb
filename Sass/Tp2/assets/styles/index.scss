@@ -78,7 +78,7 @@ p {
     h3 {
       @include contactTitle;
     }
-    p{
+    p {
       @include contactText;
       max-width: 300px;
       margin: 0 auto;

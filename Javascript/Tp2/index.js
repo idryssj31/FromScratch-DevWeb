@@ -40,10 +40,35 @@ console.log(mousemove);
 if (mousemove) {
   // premier parametre de la fct on na toute les données de l'évent
   window.addEventListener("mousemove", (e) => {
-    console.log(e);
+    console.log(e.target);
     mousemove.style.left = e.pageX + "px";
     mousemove.style.top = e.pageY + "px";
   });
 } else {
   console.error("Element with class 'mousemove' not found.");
 }
+
+// Mouse Down
+window.addEventListener("mousedown", () => {
+  mousemove.style.transform = "scale(2) translate(-25%, -25%)";
+});
+
+// Mouse Up
+window.addEventListener("mouseup", () => {
+  mousemove.style.transform = "scale(1) translate(-50%, -50%)";
+});
+
+// Mouse Enter
+questionContainer.addEventListener("mouseenter", () => {
+  questionContainer.style.background = "rgba(0,0,0,0.6)";
+});
+
+// Mouse Out
+questionContainer.addEventListener("mouseout", () => {
+  questionContainer.style.background = "pink";
+});
+
+// Mouse Over
+response.addEventListener("mouseover", () => {
+  response.style.transform = "rotate(2deg)";
+});

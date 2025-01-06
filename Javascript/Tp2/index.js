@@ -3,6 +3,12 @@
 // const baliseHTML = document.querySelector("h4");
 // console.log(baliseHTML);
 
+const ring = (key) => {
+  const audio = new Audio();
+  audio.src = "./assets/audio/Enter.mp3";
+  audio.play();
+};
+
 // Click event
 const questionContainer = document.querySelector(".click-event");
 console.log(questionContainer);
@@ -40,7 +46,7 @@ console.log(mousemove);
 if (mousemove) {
   // premier parametre de la fct on na toute les données de l'évent
   window.addEventListener("mousemove", (e) => {
-    console.log(e.target);
+    //console.log(e.target);
     mousemove.style.left = e.pageX + "px";
     mousemove.style.top = e.pageY + "px";
   });
@@ -71,4 +77,26 @@ questionContainer.addEventListener("mouseout", () => {
 // Mouse Over
 response.addEventListener("mouseover", () => {
   response.style.transform = "rotate(2deg)";
+});
+
+//------------------------------------------/
+// KeyPress event
+
+const keypressContainer = document.querySelector(".keypress");
+//console.log(keypressContainer);
+const key = document.getElementById("key");
+//console.log(key);
+document.addEventListener("keypress", (e) => {
+  console.log(e.key);
+  key.textContent = e.key;
+
+  if (e.key === "j") {
+    keypressContainer.style.background = "red";
+  } else if (e.key === "h") {
+    keypressContainer.style.background = "blue";
+  } else {
+    keypressContainer.style.background = "black";
+  }
+
+  ring(e.key);
 });

@@ -3,6 +3,12 @@
 // const baliseHTML = document.querySelector("h4");
 // console.log(baliseHTML);
 
+const ring = (key) => {
+  const audio = new Audio();
+  audio.src = "./assets/audio/Enter.mp3";
+  audio.play();
+};
+
 // Click event
 const questionContainer = document.querySelector(".click-event");
 console.log(questionContainer);
@@ -32,3 +38,80 @@ btn2.addEventListener("click", () => {
 });
 
 //------------------------------------------/
+
+// Mouse events
+const mousemove = document.querySelector(".mousemove");
+console.log(mousemove);
+
+if (mousemove) {
+  // premier parametre de la fct on na toute les données de l'évent
+  window.addEventListener("mousemove", (e) => {
+    //console.log(e.target);
+    mousemove.style.left = e.pageX + "px";
+    mousemove.style.top = e.pageY + "px";
+  });
+} else {
+  console.error("Element with class 'mousemove' not found.");
+}
+
+// Mouse Down
+window.addEventListener("mousedown", () => {
+  mousemove.style.transform = "scale(2) translate(-25%, -25%)";
+});
+
+// Mouse Up
+window.addEventListener("mouseup", () => {
+  mousemove.style.transform = "scale(1) translate(-50%, -50%)";
+});
+
+// Mouse Enter
+questionContainer.addEventListener("mouseenter", () => {
+  questionContainer.style.background = "rgba(0,0,0,0.6)";
+});
+
+// Mouse Out
+questionContainer.addEventListener("mouseout", () => {
+  questionContainer.style.background = "pink";
+});
+
+// Mouse Over
+response.addEventListener("mouseover", () => {
+  response.style.transform = "rotate(2deg)";
+});
+
+//------------------------------------------/
+// KeyPress event
+
+const keypressContainer = document.querySelector(".keypress");
+//console.log(keypressContainer);
+const key = document.getElementById("key");
+//console.log(key);
+document.addEventListener("keypress", (e) => {
+  console.log(e.key);
+  key.textContent = e.key;
+
+  if (e.key === "j") {
+    keypressContainer.style.background = "red";
+  } else if (e.key === "h") {
+    keypressContainer.style.background = "blue";
+  } else {
+    keypressContainer.style.background = "black";
+  }
+  //ring(e.key);
+});
+
+//------------------------------------------/
+// Scroll event
+
+const nav = document.querySelector("nav");
+//console.log(nav);
+
+window.addEventListener("scroll", () => {
+  console.log(window.scrollY);
+
+  if (window.scrollY > 120) {
+    nav.style.top = "0";
+  } else {
+    nav.style.top = "-50px";
+  }
+});

@@ -32,3 +32,18 @@ btn2.addEventListener("click", () => {
 });
 
 //------------------------------------------/
+
+// Mouse events
+const mousemove = document.querySelector(".mousemove");
+console.log(mousemove);
+
+if (mousemove) {
+  // premier parametre de la fct on na toute les données de l'évent
+  window.addEventListener("mousemove", (e) => {
+    console.log(e);
+    mousemove.style.left = e.pageX + "px";
+    mousemove.style.top = e.pageY + "px";
+  });
+} else {
+  console.error("Element with class 'mousemove' not found.");
+}

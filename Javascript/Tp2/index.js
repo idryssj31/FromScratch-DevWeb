@@ -148,3 +148,44 @@ form.addEventListener("submit", (e) => {
     alert("veuillez accepter les CGV");
   }
 });
+
+//------------------------------------------/
+// Load events
+
+window.addEventListener("load", () => {
+  console.log("doc chargé");
+});
+
+//------------------------------------------/
+// For each
+const boxes = document.querySelectorAll(".box");
+//console.log(boxes);
+boxes.forEach((box) => {
+  box.addEventListener("click", (e) => {
+    e.target.style.background = "blue";
+  });
+});
+
+//------------------------------------------/
+// AddEventListener Vs OnClick
+/*document.body.onclick = function () {
+  console.log("Scroll !");
+};*/
+
+// Bubbling => fin de base configurer comme ca
+document.body.addEventListener(
+  "click",
+  () => {
+    console.log("click 1 !");
+  },
+  false
+);
+
+// UseCapture => first
+document.body.addEventListener(
+  "click",
+  () => {
+    console.log("click 2 !");
+  },
+  true
+);

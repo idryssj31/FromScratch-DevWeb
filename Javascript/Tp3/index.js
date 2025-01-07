@@ -5,6 +5,3 @@
 // S'assurer que les liens sont clickables
 
 // Donner un style de transparence aux 2 plus gros ronds (mix-blend-mode)
-
-const mouseMove = document.querySelector(".mouseMove");
-console.log(mouseMove);

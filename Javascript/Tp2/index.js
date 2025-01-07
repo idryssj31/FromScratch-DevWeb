@@ -107,11 +107,44 @@ const nav = document.querySelector("nav");
 //console.log(nav);
 
 window.addEventListener("scroll", () => {
-  console.log(window.scrollY);
+  //console.log(window.scrollY);
 
   if (window.scrollY > 120) {
     nav.style.top = "0";
   } else {
     nav.style.top = "-50px";
+  }
+});
+
+//------------------------------------------/
+// Form events
+
+const inputName = document.querySelector('input[type="text"]');
+const select = document.querySelector("select");
+const form = document.querySelector("form");
+//console.log(inputName);
+let pseudo = "";
+let language = "";
+
+inputName.addEventListener("input", (e) => {
+  pseudo = e.target.value;
+  console.log(pseudo);
+});
+
+select.addEventListener("input", (e) => {
+  console.log(e.target.value);
+  language = e.target.value;
+});
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  if (cgv.checked) {
+    document.querySelector("form>div").innerHTML = `
+      <h3>Pseudo : ${pseudo}</h3>
+      <h4>Langage préféré : ${language}</h4>
+    `;
+    console.log("ok");
+  } else {
+    alert("veuillez accepter les CGV");
   }
 });

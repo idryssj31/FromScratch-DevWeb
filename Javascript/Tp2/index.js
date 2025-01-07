@@ -189,3 +189,84 @@ document.body.addEventListener(
   },
   true
 );
+
+//------------------------------------------/
+// Stop Propagation
+questionContainer.addEventListener("click", (e) => {
+  console.log("click 5 !");
+  e.stopPropagation();
+});
+
+//------------------------------------------/
+// BOM
+
+//console.log(window.innerHeight);
+//console.log(window.scrollY);
+//window.open("https://www.google.com/", "coik", "width=80");
+//window.close();
+
+// Evenements adossés a windows
+// alert("ok");
+
+// Confirm
+btn2.addEventListener("click", () => {
+  confirm("blabalaba");
+});
+
+// Prompt
+let answer;
+btn1.addEventListener("click", () => {
+  answer = prompt("blibliblibli");
+  console.log(answer);
+  questionContainer.innerHTML += "<h3>Blaze : " + answer + "</h3>";
+});
+
+// Timer, compte a rebours
+setTimeout(() => {
+  questionContainer.style.borderRadius = "200px";
+}, 2000);
+
+/*let interval = setInterval(() => {
+  document.body.innerHTML += `
+    <div class='box'>
+      <h2>New Boite</h2>
+    </div>
+  `;
+}, 3000);*/
+
+/*window.addEventListener("click", () => {
+  console.log("stop interval");
+  clearInterval(interval);
+});*/
+
+// Retirer un element du DOM
+/*document.body.addEventListener("click", (e) => {
+  e.target.remove();
+});*/
+
+// Location
+// console.log(location.href);
+// console.log(location.host);
+// console.log(location.pathname);
+// console.log(location.search);
+// location.replace("https://www.google.com");
+
+/*window.onload = () => {
+  location.href = "https://www.google.com";
+};*/
+
+// Navigator
+//console.log(navigator.userAgent);
+//faire d autre recherche sur le ficheir du prof
+
+// History
+//console.log(history);
+//window.history.back();
+//history.go(-2);
+
+//------------------------------------------/
+// Set Property
+window.addEventListener("mousemove", (e) => {
+  nav.style.setProperty("--x", e.layerX + "px");
+  nav.style.setProperty("--y", e.layerY + "py");
+});

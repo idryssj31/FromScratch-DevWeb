@@ -35,7 +35,9 @@ nav {
 nav ul {
   display: flex;
   justify-content: space-between;
+  z-index: 2;
 }
+
 section {
   display: flex;
 }
@@ -47,6 +49,10 @@ section {
 }
 h1 {
   font-size: 5rem;
+}
+
+h3 {
+  z-index: 1;
 }
 .main-left h2 {
   color: #474dff;
@@ -91,6 +97,36 @@ footer {
 
 footer img {
   height: 60px;
+}
+
+/* Mouse */
+
+.mousemove {
+  border-radius: 90px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  cursor: none;
+}
+
+#cursor {
+  height: 10px;
+  width: 10px;
+  background: blue;
+}
+#mouse1 {
+  height: 150px;
+  width: 150px;
+  background: rgba(0, 0, 0, 0.178);
+  transition: 0.3s;
+  mix-blend-mode: darken;
+}
+#mouse2 {
+  height: 70px;
+  width: 70px;
+  background: rgba(128, 128, 128, 0.199);
+  transition: 0.2s;
+  mix-blend-mode: normal;
 }
 
 /* ************** RESPONSIVE *************** */

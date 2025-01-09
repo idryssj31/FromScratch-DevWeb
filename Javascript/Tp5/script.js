@@ -9,7 +9,7 @@
 // Bonus : quand on clicke sur la popup elle disparait pour toujours
 
 const nav = document.querySelector("nav");
-let navScroll = 0;
+let navScroll = 50;
 
 const img = document.getElementById("imgImprovise");
 const popup = document.getElementById("popup");
@@ -20,15 +20,21 @@ window.addEventListener("scroll", () => {
   if (window.scrollY > navScroll) {
     nav.style.height = "60px";
     console.log(window.scrollY);
+  } else {
+    nav.style.height = "90px";
   }
-  if (window.scrollY > 250) {
+
+  let scroolValue =
+    (window.scrollY + window.innerHeight) / document.body.offsetHeight;
+
+  if (scroolValue > 0.45) {
     img.style.opacity = "1";
-    img.style.transform = "translate(-5%)";
+    img.style.transform = "none";
     console.log("u");
   }
-  if (window.scrollY > 900) {
+  if (scroolValue > 0.9) {
     popup.style.opacity = "1";
-    popup.style.transform = "translate(-8%)";
+    popup.style.transform = "none";
     console.log("t");
   }
 });

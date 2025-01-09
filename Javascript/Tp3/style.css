@@ -16,6 +16,8 @@ a:visited {
   color: white;
   text-decoration: none;
   transition: 0.3s;
+  z-index: 1;
+  position: relative;
 }
 a:hover {
   font-size: 1.3rem;
@@ -46,6 +48,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: 1;
 }
 h1 {
   font-size: 5rem;
@@ -105,8 +108,8 @@ footer img {
   border-radius: 90px;
   position: absolute;
   transform: translate(-50%, -50%);
-  z-index: -1;
   cursor: none;
+  mix-blend-mode: difference;
 }
 
 #cursor {
@@ -117,16 +120,14 @@ footer img {
 #mouse1 {
   height: 150px;
   width: 150px;
-  background: rgba(0, 0, 0, 0.178);
-  transition: 0.3s;
-  mix-blend-mode: darken;
+  background: rgb(41, 41, 41);
+  transition: 0.2s;
 }
 #mouse2 {
   height: 70px;
   width: 70px;
-  background: rgba(128, 128, 128, 0.199);
-  transition: 0.2s;
-  mix-blend-mode: normal;
+  background: white;
+  transition: 0.1s;
 }
 
 /* ************** RESPONSIVE *************** */

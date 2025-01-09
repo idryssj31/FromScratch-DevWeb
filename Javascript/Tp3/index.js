@@ -20,20 +20,5 @@ const mouseCursor = document.getElementById("cursor");
 const mouseMove1 = document.getElementById("mouse1");
 const mouseMove2 = document.getElementById("mouse2");
 
-const text = document.querySelectorAll("h1, h2, p, h3, li");
+const text = document.querySelectorAll("h1, h2, p, h3, li, img");
 console.log(text);
-
-text.forEach((child) => {
-  child.addEventListener("mouseover", () => {
-    mouseCursor.style.background = "yellow";
-    mouseMove1.style.mixBlendMode = "white";
-    mouseMove2.style.mixBlendMode = "difference";
-  });
-  
-  child.addEventListener("mouseout", () => {
-    mouseCursor.style.background = "blue";
-    mouseMove1.style.mixBlendMode = "normal";
-    mouseMove2.style.mixBlendMode = "normal";
-  });
-});
-

@@ -7,18 +7,23 @@
 // Connaitre niveau de scroll (window.scrollY)
 
 const nav = document.querySelector("nav");
-console.log(nav);
 nav.style.top = "0";
-let scrollValue = window.scrollY;
-let finalValue = scrollValue;
+let finalValue = 0;
+
 window.addEventListener("scroll", () => {
-  if (window.scrollY > scrollValue) {
-    nav.style.top = "-60" + "px";
-    finalValue = window.scrollY;
-    scrollValue = finalValue;
-    console.log("final value : " + finalValue);
-  } else if (window.scrollY < scrollValue) {
+  if (window.scrollY < finalValue) {
     nav.style.top = "0";
-    scrollValue = window.scrollY;
+  } else {
+    nav.style.top = "-60" + "px";
   }
+  finalValue = window.scrollY;
 });
+
+// Other method //
+
+/*let lastScrollPosition = window.scrollY;
+
+document.addEventListener("scroll", () => {
+  navbar.style.top = window.scrollY > lastScrollPosition ? "-60px" : "0px";
+  lastScrollPosition = window.scrollY;
+});*/

@@ -1,14 +1,15 @@
+// Value
+nbrCounter = 0;
+
 // Initiate the bubble
 function initBubble() {
-  document.body.innerHTML += `
-  <div class = "bubble">
-  </div>
-`;
-  const bubbles = document.querySelectorAll(".bubble");
-  bubbles.forEach((child) => {
-    setBubble(child);
-    setBubbleLocation(child);
-  });
+  const bubble = document.createElement("span");
+  bubble.classList.add("bubble");
+  document.body.appendChild(bubble);
+
+  setBubble(bubble);
+  setBubbleLocation(bubble);
+  clickEventBubble(bubble);
 }
 
 // Set bubble properties
@@ -20,13 +21,15 @@ function setBubble(_child) {
   _child.style.width = nbr;
 }
 
-// Init random position
+// Init random position & random movement
 function setBubbleLocation(_child) {
-  let nbrVPosition = getRandomNbr(-30, 30);
-  _child.style.bottom = nbrVPosition + "px";
+  let nbrVPosition = getRandomNbr(700, 800);
+  _child.style.top = nbrVPosition + "px";
   let nbrHPosition = getRandomNbr(0, 900);
-  _child.style.transform = `translate(${nbrHPosition}%`;
-  console.log("position");
+  _child.style.left = nbrHPosition + "px";
+  let mouvement = getRandomNbr(-200, 200);
+  _child.style.setProperty("--left", `${mouvement}%`);
+  //console.log(mouvement);
 }
 
 // Function to generare random numbers
@@ -35,12 +38,18 @@ function getRandomNbr(_min, _max) {
 }
 
 // Bubble life time management
-let interval = setInterval(() => {
-  initBubble();
-}, 4000);
+setInterval(initBubble, 500);
 
-// Stop propagation
-window.addEventListener("click", () => {
-  console.log("stop interval");
-  clearInterval(interval);
-});
+// Event click on bubble
+function clickEventBubble(_child) {
+  _child.addEventListener("click", (e) => {
+    // _child.style.display = "none";
+    _child.remove();
+    nbrCounter++;
+    console.log("nbr :" + nbrCounter);
+    document.body.innerHTML = `
+    <div class = "number"><h3>${nbrCounter}</h3>
+    </div>
+  `;
+  });
+}

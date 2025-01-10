@@ -226,13 +226,13 @@ setTimeout(() => {
   questionContainer.style.borderRadius = "200px";
 }, 2000);
 
-/*let interval = setInterval(() => {
+let interval = setInterval(() => {
   document.body.innerHTML += `
     <div class='box'>
       <h2>New Boite</h2>
     </div>
   `;
-}, 3000);*/
+}, 3000);
 
 /*window.addEventListener("click", () => {
   console.log("stop interval");

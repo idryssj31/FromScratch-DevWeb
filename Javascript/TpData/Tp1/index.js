@@ -35,7 +35,4 @@ const loop = () => {
 };
 loop();
 
-// methodes string
-let string = "js est un lg orienté objet";
-
-console.log(typeof string);
+// regarder la correction

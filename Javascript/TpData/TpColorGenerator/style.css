@@ -1,0 +1,18 @@
+body {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(red, green, blue);
+}
+.rgbGenerator {
+  display: flex;
+  width: 200px;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.849);
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}

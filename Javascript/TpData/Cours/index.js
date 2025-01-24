@@ -77,7 +77,7 @@ for (const user of data) {
 for (i = 0; i < data.length; i++) {
   // console.log(i);
   // console.log(data[i].technos[0]);
-  // document.body.innerHTML += "<h2>" + data[i].technos + "</h2>";
+  document.body.innerHTML += "<h2>" + data[i].technos + "</h2>";
 }
 
 // Switch

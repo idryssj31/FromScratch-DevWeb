@@ -1,0 +1,37 @@
+{
+  "editor.wordWrap": "on",
+  "workbench.iconTheme": "material-icon-theme",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "workbench.colorTheme": "One Dark Pro",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.fontSize": 18,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "editor.formatOnSave": true,
+  "editor.linkedEditing": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "git.ignoreRebaseWarning": true,
+  "files.autoSave": "afterDelay",
+  "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"],
+  "githubPullRequests.fileListLayout": "tree",
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "workbench.editor.editorActionsLocation": "titleBar",
+  "window.customTitleBarVisibility": "windowed"
+}

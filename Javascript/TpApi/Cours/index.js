@@ -63,9 +63,30 @@ document.querySelector("form").addEventListener("submit", () => {
   );
 });
 
-
 //--- Asynchrone ---//
 
 // Promise
 
 //fetch("monlien").then((res) => res);
+
+// *** LE JSON *** //
+fetch("data.json")
+  .then((res) => res.json())
+  .then((data) => {
+    // stringify convertit en json
+    let settings = JSON.stringify(data);
+  });
+
+// local Storage
+localStorage.data = "rfedf";
+localStorage.removeItem("io");
+
+// session storage
+sessionStorage.clear();
+
+
+// Cookies
+document.cookie = "username=FromScratch";
+
+// Bonne pratique
+document.cookie = "pseudo=FS; path=/; max-age=45000; secure; samesite";

@@ -11,17 +11,19 @@ async function fetchCountry() {
 }
 
 function countryDisplay() {
-  console.log("ee");
   if (countries === null) {
     result.innerHTML = "<h2>Aucun résultat</h2>";
   } else {
-    countries.length = 12;
+    //countries.length = 12;
     result.innerHTML = countries
+      .filter((country) =>
+        country.translations.fra.common.includes(inputSearch.value)
+      )
       .map(
         (country) => `
     <li class="card">
         <img src="${country.flags.png}" alt="Flag of ${country.name.common}">
-        <h2>${country.name.common}</h2>
+        <h2>${country.translations.fra.common}</h2>
         <p>${country.capital}</p>
         <p>Population : ${country.population.toLocaleString()}</p>
   `
@@ -30,9 +32,8 @@ function countryDisplay() {
   }
 }
 
-input.addEventListener("input", (e) => {
-  //countryDisplay();
-});
+inputSearch.addEventListener("input", countryDisplay);
+
 fetchCountry();
 
 // 1 - Tester le lien de l'API dans le navigateur (https://restcountries.com/v3.1/all)

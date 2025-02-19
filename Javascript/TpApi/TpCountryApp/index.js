@@ -66,7 +66,7 @@ function countryDisplay() {
     .join("");
 }
 
-fetchCountry();
+window.addEventListener("load", fetchCountry);
 inputSearch.addEventListener("input", countryDisplay);
 inputRange.addEventListener("input", countryDisplay);
 minToMax.addEventListener("click", () => {

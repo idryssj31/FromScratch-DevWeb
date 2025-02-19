@@ -1,6 +1,7 @@
 const result = document.querySelector(".countries-container");
+const button = document.querySelectorAll(".btnSort");
 let countries = [];
-let statut = 0;
+let statut = "";
 
 async function fetchCountry() {
   await fetch("https://restcountries.com/v3.1/all")
@@ -8,6 +9,7 @@ async function fetchCountry() {
     .then((data) => (countries = data));
   console.log(countries);
   countryDisplay();
+  rangeValue.textContent = inputRange.value;
 }
 
 function sortAscending() {}
@@ -27,21 +29,22 @@ function countryDisplay() {
 
   // Trier selon le statut du tri
   switch (statut) {
-    case 1:
+    case "minToMax":
       console.log("max");
       filteredCountries.sort((a, b) => a.population - b.population);
       break;
-    case 2:
+    case "maxToMin":
       console.log("min");
       filteredCountries.sort((a, b) => b.population - a.population);
       break;
-    case 3:
+    case "alpha":
       console.log("alpha");
       filteredCountries.sort((a, b) =>
         a.translations.fra.common.localeCompare(b.translations.fra.common)
       );
       break;
     default:
+      console.log("Aucun tri appliqué");
       break;
   }
 
@@ -68,18 +71,16 @@ function countryDisplay() {
 
 window.addEventListener("load", fetchCountry);
 inputSearch.addEventListener("input", countryDisplay);
-inputRange.addEventListener("input", countryDisplay);
-minToMax.addEventListener("click", () => {
-  statut = 1;
+inputRange.addEventListener("input", () => {
+  rangeValue.textContent = inputRange.value;
   countryDisplay();
 });
-maxToMin.addEventListener("click", () => {
-  statut = 2;
-  countryDisplay();
-});
-alpha.addEventListener("click", () => {
-  statut = 3;
-  countryDisplay();
+button.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    statut = e.target.id;
+    console.log(statut);
+    countryDisplay();
+  });
 });
 
 // 1 - Tester le lien de l'API dans le navigateur (https://restcountries.com/v3.1/all)

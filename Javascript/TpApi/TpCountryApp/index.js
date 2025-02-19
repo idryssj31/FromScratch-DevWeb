@@ -8,6 +8,7 @@ async function fetchCountry() {
     .then((data) => (countries = data));
   console.log(countries);
   countryDisplay();
+  rangeValue.textContent = inputRange.value;
 }
 
 function sortAscending() {}
@@ -68,7 +69,10 @@ function countryDisplay() {
 
 window.addEventListener("load", fetchCountry);
 inputSearch.addEventListener("input", countryDisplay);
-inputRange.addEventListener("input", countryDisplay);
+inputRange.addEventListener("input", () => {
+  rangeValue.textContent = inputRange.value;
+  countryDisplay();
+});
 minToMax.addEventListener("click", () => {
   statut = 1;
   countryDisplay();

@@ -1,6 +1,6 @@
-const input = document.getElementById("inputSearch");
 const result = document.querySelector(".countries-container");
 let countries = [];
+let statut = 0;
 
 async function fetchCountry() {
   await fetch("https://restcountries.com/v3.1/all")
@@ -10,31 +10,77 @@ async function fetchCountry() {
   countryDisplay();
 }
 
+function sortAscending() {}
 function countryDisplay() {
-  if (countries === null) {
+  if (!countries || countries.length === 0) {
     result.innerHTML = "<h2>Aucun résultat</h2>";
-  } else {
-    //countries.length = 12;
-    result.innerHTML = countries
-      .filter((country) =>
-        country.translations.fra.common.includes(inputSearch.value)
-      )
-      .map(
-        (country) => `
-    <li class="card">
+    return;
+  }
+
+  // Récupérer la valeur de l'input de recherche en minuscule pour un filtrage insensible à la casse
+  const searchQuery = inputSearch.value.toLowerCase();
+
+  // Filtrer les pays selon la recherche
+  const filteredCountries = countries.filter((country) =>
+    country.translations.fra.common.toLowerCase().includes(searchQuery)
+  );
+
+  // Trier selon le statut du tri
+  switch (statut) {
+    case 1:
+      console.log("max");
+      filteredCountries.sort((a, b) => a.population - b.population);
+      break;
+    case 2:
+      console.log("min");
+      filteredCountries.sort((a, b) => b.population - a.population);
+      break;
+    case 3:
+      console.log("alpha");
+      filteredCountries.sort((a, b) =>
+        a.translations.fra.common.localeCompare(b.translations.fra.common)
+      );
+      break;
+    default:
+      break;
+  }
+
+  // Limiter le tableau affiché selon la valeur de inputRange (convertie en nombre)
+  const limitedCountries = filteredCountries.slice(
+    0,
+    parseInt(inputRange.value, 10)
+  );
+
+  // Générer le HTML pour chaque pays
+  result.innerHTML = limitedCountries
+    .map(
+      (country) => `
+      <li class="card">
         <img src="${country.flags.png}" alt="Flag of ${country.name.common}">
         <h2>${country.translations.fra.common}</h2>
         <p>${country.capital}</p>
         <p>Population : ${country.population.toLocaleString()}</p>
-  `
-      )
-      .join("");
-  }
+      </li>
+    `
+    )
+    .join("");
 }
 
-inputSearch.addEventListener("input", countryDisplay);
-
 fetchCountry();
+inputSearch.addEventListener("input", countryDisplay);
+inputRange.addEventListener("input", countryDisplay);
+minToMax.addEventListener("click", () => {
+  statut = 1;
+  countryDisplay();
+});
+maxToMin.addEventListener("click", () => {
+  statut = 2;
+  countryDisplay();
+});
+alpha.addEventListener("click", () => {
+  statut = 3;
+  countryDisplay();
+});
 
 // 1 - Tester le lien de l'API dans le navigateur (https://restcountries.com/v3.1/all)
 

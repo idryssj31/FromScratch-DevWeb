@@ -15,5 +15,22 @@ let exerciceArray = [
 class Exercice {}
 
 const utils = {
-    
-}
+  pageContent: function (title, content, btn) {
+    document.querySelector("h1").innerHTML = title;
+    main.innerHTML = content;
+    document.querySelector(".btn-container").innerHTML = btn;
+  },
+};
+
+const page = {
+  lobby: function () {
+    utils.pageContent(
+      "Paramétrage <i id='reboot' class='fas fa-undo'></i>",
+      "Exercices",
+      "<button id='start'>Commencer<i class='far fa-play-circle'></i></button>"
+    );
+  },
+
+  routine: function () {},
+  finish: function () {},
+};

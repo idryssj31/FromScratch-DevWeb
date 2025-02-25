@@ -24,13 +24,40 @@ const utils = {
 
 const page = {
   lobby: function () {
+    let mapArray = exerciceArray
+      .map(
+        (exo) =>
+          `
+        <li>
+          <div class"card-header">
+            <input type="number" id=${exo.pic} min="1" max="10" value=${exo.min}>
+            <span>min</span>
+          </div>
+          <img src="./img/${exo.pic}.png"/>
+          <i class="fas fa-arrow-alt-circle-left arrow" data-pic=${exo.pic}></i>
+          <i class="fas fa-times-circle deleteBtn" data-pic=${exo.pic}></i>
+        </li>
+      `
+      )
+      .join("");
     utils.pageContent(
       "Paramétrage <i id='reboot' class='fas fa-undo'></i>",
-      "Exercices",
+      "<ul>" + mapArray + "</ul>",
       "<button id='start'>Commencer<i class='far fa-play-circle'></i></button>"
     );
+    //utils.handleEventMinutes();
   },
 
-  routine: function () {},
-  finish: function () {},
+  routine: function () {
+    utils.pageContent("Routine", "Exercice avec chrono", null);
+  },
+  finish: function () {
+    utils.pageContent(
+      "C'est terminé !",
+      "<button id='start'>Recommencer</button>",
+      "<button id='reboot' class='btn-reboot'>Réinintialiser<i class='fas fa-times-circle'></i></button>"
+    );
+  },
 };
+
+page.lobby();

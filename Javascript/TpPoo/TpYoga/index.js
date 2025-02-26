@@ -20,6 +20,33 @@ const utils = {
     main.innerHTML = content;
     document.querySelector(".btn-container").innerHTML = btn;
   },
+
+  handleEventMinutes: function () {
+    document.querySelectorAll('input[type="number"]').forEach((input) => {
+      input.addEventListener("input", (e) => {
+        exerciceArray.map((exo) => {
+          if (exo.pic == e.target.id) {
+            exo.min = parseInt(e.target.value);
+          }
+        });
+      });
+    });
+  },
+
+  handleEventArrow: function () {
+    document.querySelectorAll(".arrow").forEach((arrow) => {
+      arrow.addEventListener("click", (e) => {
+        let position = 0;
+        exerciceArray.map((exo) => {
+          if (exo.pic == e.target.dataset.pic) {
+            
+          } else {
+            position++;
+          }
+        });
+      });
+    });
+  },
 };
 
 const page = {
@@ -45,7 +72,8 @@ const page = {
       "<ul>" + mapArray + "</ul>",
       "<button id='start'>Commencer<i class='far fa-play-circle'></i></button>"
     );
-    //utils.handleEventMinutes();
+    utils.handleEventMinutes();
+    utils.handleEventArrow();
   },
 
   routine: function () {

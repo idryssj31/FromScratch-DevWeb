@@ -1,0 +1,11 @@
+10
+86G:\Dev Web\Formation\FromScratch-DevWeb\Javascript\TpOther\TpImportExport\package.json133881562112672085 0
+109G:\Dev Web\Formation\FromScratch-DevWeb\Javascript\TpOther\TpImportExport\dist\TpImportExport.c36f364e.js.map133880799083558971 0
+80G:\Dev Web\Formation\FromScratch-DevWeb\Javascript\TpOther\TpImportExport\add.js133880800016097072 0
+78G:\Dev Web\Formation\FromScratch-DevWeb\Javascript\TpOther\TpImportExport\dist133881562880186421 1
+109G:\Dev Web\Formation\FromScratch-DevWeb\Javascript\TpOther\TpImportExport\dist\TpImportExport.3464ddca.js.map133881562880186421 0
+84G:\Dev Web\Formation\FromScratch-DevWeb\Javascript\TpOther\TpImportExport\index.html133881562909385983 0
+82G:\Dev Web\Formation\FromScratch-DevWeb\Javascript\TpOther\TpImportExport\index.js133880814278648205 0
+105G:\Dev Web\Formation\FromScratch-DevWeb\Javascript\TpOther\TpImportExport\dist\TpImportExport.3464ddca.js133881562880163698 0
+89G:\Dev Web\Formation\FromScratch-DevWeb\Javascript\TpOther\TpImportExport\dist\index.html133881562880010712 0
+105G:\Dev Web\Formation\FromScratch-DevWeb\Javascript\TpOther\TpImportExport\dist\TpImportExport.c36f364e.js133880799083538950 0
